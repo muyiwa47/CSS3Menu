@@ -1,0 +1,147 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #baeaef;
+    width: 100%;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: #2dbbef;
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* The animation code */
+@keyframes open {
+    from {left: -152px;}
+    to {left: 0px;}
+}
+
+@keyframes closed {
+    from {left: 0px;}
+    to {left: -152px;}
+}
+
+@keyframes open_r {
+    from {right: -152px;}
+    to {right: 0px;}
+}
+
+@keyframes closed_r {
+    from {right: 0px;}
+    to {right: -152px;}
+}
+
+.open {
+    animation: open 0.5s forwards;
+}
+
+.closed {
+    animation: closed 0.5s forwards;
+}
+
+.open_r {
+    animation: open_r 0.5s forwards;
+}
+
+.closed_r {
+    animation: closed_r 0.5s forwards;
+}
+
+.r_menu-wrapper, .l_menu-wrapper {
+    background-color :#038bb1;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 100;
+}
+
+.l_menu-wrapper {
+    left: -152px;
+    box-shadow: 3px 1px 2px grey;
+}
+
+.r_menu-wrapper {
+    right: -152px;
+    box-shadow: -3px 1px 2px grey;
+}
+
+.r_menu-wrapper nav {
+    color : #ffffff;
+    text-align: right;
+}
+
+.l_menu-wrapper nav {
+    color : #ffffff;
+    text-align: left;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.l_menu-wrapper .menu {
+    height: 20px;
+    text-align: right;
+}
+
+.l_menu-wrapper .menu i {
+    color : #ffffff;
+    padding: 10px;
+    right: 0px;
+    position: absolute;
+    margin-right: 10px;
+}
+
+.r_menu-wrapper .menu {
+    height: 20px;
+    text-align: left;
+}
+
+.r_menu-wrapper .menu i {
+    color : #ffffff;
+    padding: 10px;
+    left: 0px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.main_content {
+    width: 300px;
+    height: 300px;
+    background-color: azure;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.main_content div {
+    background-color: cadetblue;
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'ZCOOL XiaoWei', serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Cinzel', serif; */
